@@ -19,6 +19,8 @@ CREATE TABLE public.ekatte (
     abc integer
 );
 
+ALTER TABLE ONLY public.ekatte ADD CONSTRAINT ekatte_pkey PRIMARY KEY (ekatte);
+
 CREATE INDEX idx_ekatte_ekatte ON ekatte (ekatte);
 
 CREATE INDEX idx_ekatte_oblast ON ekatte (oblast);
