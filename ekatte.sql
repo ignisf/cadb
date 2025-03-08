@@ -1,3 +1,32 @@
+CREATE TABLE public.ekatte (
+    ekatte character varying NOT NULL,
+    t_v_m character varying,
+    name character varying,
+    oblast character varying,
+    obshtina character varying,
+    kmetstvo character varying,
+    kind integer,
+    category integer,
+    altitude integer,
+    document integer,
+    name_en character varying,
+    nuts1 character varying,
+    nuts2 character varying,
+    nuts3 character varying,
+    oblast_name character varying,
+    obshtina_name character varying,
+    text character varying,
+    abc integer
+);
+
+CREATE INDEX idx_ekatte_ekatte ON ekatte (ekatte);
+
+CREATE INDEX idx_ekatte_oblast ON ekatte (oblast);
+
+CREATE INDEX idx_ekatte_obshtina ON ekatte (obshtina);
+
+CREATE INDEX idx_ekatte_kmetstvo ON ekatte (kmetstvo);
+
 insert into
     ekatte
 select
